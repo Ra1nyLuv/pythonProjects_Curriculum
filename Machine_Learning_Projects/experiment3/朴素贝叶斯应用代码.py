@@ -6,7 +6,7 @@ from sklearn.metrics import f1_score
 
 ### STEP1 ###
 # 加载数据
-input_file = r'Machine_Learning_Projects\experiment3\adult.data.txt'  # adult.data.txt'
+input_file = r'E:\PyCharm\CondaProject\Machine_Learning_Projects\experiment3\adult.data.txt'  # adult.data.txt'
 X = []
 y = []
 num_lessthan50k = 0
