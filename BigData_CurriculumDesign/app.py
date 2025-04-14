@@ -6,8 +6,6 @@ from flask_paginate import Pagination
 from flask_paginate import get_page_args
 
 
-
-
 app = Flask(__name__)
 
 # MySQL 配置
@@ -30,8 +28,8 @@ startup_nodes = [
 ]
 redis_client = RedisCluster(startup_nodes=startup_nodes, decode_responses=True)
 
-# 设置缓存过期时间为 6000 秒
-CACHE_TTL = 6000
+# 设置缓存过期时间
+CACHE_TTL = 60000
 
 
 # def get_data_from_cache_or_db(cache_key, query, table_name):
@@ -249,7 +247,7 @@ def get_total_records(table_name): # 获取总记录数用于完善分页显示�
         cursor.close()
         conn.close()
 
-        redis_client.setex(cache_key, 6000, total_records)
+        redis_client.setex(cache_key, 60000, total_records)
 
         return total_records
 

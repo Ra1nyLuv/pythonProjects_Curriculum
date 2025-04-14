@@ -5,7 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Data_Acquision_Fusion/ptu" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mySpider/ptu" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Remote Python 3.8.19 (sftp://root@node01:22/export/server/anaconda3/envs/pyspark/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="E:\Anaconda" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
